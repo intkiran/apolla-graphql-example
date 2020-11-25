@@ -1,0 +1,22 @@
+{
+    "name": "employee-graphql",
+    "description": "A GraphQL API server which uses Employee REST APIs",
+    "authors": "Kiran",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "SET NODE_ENV=development & nodemon index.js "
+    },
+    "dependencies": {
+        "apollo-datasource-rest": "^0.9.3",
+        "apollo-server": "^2.15.1",
+        "apollo-server-cloud-functions": "^2.19.0",
+        "graphql": "^15.4.0",
+        "graphql-import": "^1.0.2",
+        "node-fetch": "^2.6.0",
+        "npm": "^6.14.6",
+        "properties-reader": "^2.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}

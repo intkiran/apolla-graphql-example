@@ -1,0 +1,40 @@
+schema {
+  query: Query
+}
+
+type Query {
+  departments(q:String): [Department]
+  employees:[Employee]
+}
+
+type Employee {
+  empId: Int
+  firstname: String
+  lastname: String
+  street: String
+  city: String
+  state: String
+  zip: String
+  username: String
+}
+
+type Department {
+  deptId: Int
+  name: String
+  budget: Int
+  q1: Int
+  q2: Int
+  q3: Int
+  q4: Int
+  deptCode: String
+  location: String
+  employees: [Employee]
+  projects: [Project]
+}
+
+type Project {
+  prjId: Int
+  name: String
+  code: String
+}
+ 
